@@ -1,0 +1,131 @@
+/* AUTH CONTAINER */
+.auth-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #333, #4facfe); /* Matches navigation theme */
+    font-family: "Poppins", sans-serif;
+    padding: 20px;
+  }
+  
+  /* AUTH BOX */
+  .auth-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .auth-box:hover {
+    transform: scale(1.02);
+  }
+  
+  .auth-box h2 {
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-size: 1.8rem;
+  }
+  
+  /* INPUT FIELDS */
+  .auth-input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .auth-input:focus {
+    border-color: #4facfe;
+    outline: none;
+  }
+  
+  /* BUTTONS */
+  .auth-button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .auth-button.primary {
+    background: #4facfe;
+    color: white;
+  }
+  
+  .auth-button.primary:hover {
+    background: #3a86ff;
+  }
+  
+  .auth-button.google {
+    background: white;
+    color: #333;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .auth-button.google img {
+    width: 20px;
+    margin-right: 10px;
+  }
+  
+  .auth-button.google:hover {
+    background: #f5f5f5;
+  }
+  
+  /* SEPARATOR */
+  .separator {
+    margin: 15px 0;
+    color: #888;
+  }
+  
+  /* FOOTER */
+  .auth-footer {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  
+  .auth-footer a {
+    color: #4facfe;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .auth-footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* RESPONSIVE DESIGN */
+  @media (max-width: 768px) {
+    .auth-box {
+      width: 90%;
+      padding: 1.5rem;
+    }
+  
+    .auth-box h2 {
+      font-size: 1.5rem;
+    }
+  
+    .auth-input {
+      padding: 10px;
+    }
+  
+    .auth-button {
+      padding: 10px;
+    }
+  }
+  
